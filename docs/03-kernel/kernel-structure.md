@@ -135,7 +135,7 @@ From `syssets.asm` (generated per target, see
 | `atm2clock` | 0/1 | RTC wiring variant |
 | `USETOPDOWNMEM` | def | system pages at top of RAM |
 
-## Next
+## See also
 
 * [Syscall interface](syscall-interface.md) — how user code reaches all this.
 * [Filesystem stack](filesystem-stack.md) and [network stack](network-stack.md)

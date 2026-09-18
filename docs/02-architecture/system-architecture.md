@@ -2,6 +2,11 @@
 
 *Up: [Documentation hub](../README.md) · Next: [Memory map](memory-map.md)*
 
+Sources: [`src/kernel/`](../../NedoOS/src/kernel) (especially `main.asm`,
+`syskrnl.asm`, `sysbdos.asm`), [`_sdk/sysdefs.asm`](../../NedoOS/src/_sdk/sysdefs.asm)
+and [`_sdk/sys_h.asm`](../../NedoOS/src/_sdk/sys_h.asm), and
+[`src/Makefile`](../../NedoOS/src/Makefile).
+
 This page gives the layered, bird’s-eye view of NedoOS. Each layer is then
 expanded in dedicated pages: [memory](memory-map.md),
 [processes](process-model.md), [I/O](io-and-pipes.md),
@@ -188,7 +193,7 @@ sequenceDiagram
   exactly one visible screen and one input stream at a time.
 * Not portable off the Z80: page sizes, ports and restarts are baked in.
 
-## Next steps
+## See also
 
 * [Memory map](memory-map.md) — exact pages, windows, stacks, buffers.
 * [Process model](process-model.md) — the app descriptor and scheduler in depth.

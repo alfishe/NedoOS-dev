@@ -5,6 +5,11 @@
 Terms are grouped by theme. Cross-references point into this documentation set
 and into the actual sources.
 
+Sources: the whole [`src/`](../../NedoOS/src) tree, the manuals
+[`nedoos.txt`](../../NedoOS/src/nedoos.txt) /
+[`nedoos_en.md`](../../NedoOS/src/nedoos_en.md), and the tool notes under
+[`tools/`](../../NedoOS/tools).
+
 ## Core & memory
 
 | Term | Meaning |
@@ -107,3 +112,9 @@ and into the actual sources.
 | **dmimg** | Disk image manipulation tool (adddir etc.) |
 | `release/` | Output tree: `bin/` executables, `doc/` manuals, platform images |
 | **hobeta target** | Kernel packed as `nedoos.$C` boot file for HDD/SD installs |
+
+## See also
+
+* [Source map](../07-appendix/source-map.md) — every directory of the
+  repository, one line each.
+* [Documentation hub](../README.md) — reading paths through all of this.

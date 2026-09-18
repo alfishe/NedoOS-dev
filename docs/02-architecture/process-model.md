@@ -2,7 +2,7 @@
 
 *Prev: [Memory map](memory-map.md) · Next: [I/O & pipes](io-and-pipes.md)*
 
-Primary sources: [`kernel/syskrnl.asm`](../../NedoOS/src/kernel/syskrnl.asm)
+Sources: [`kernel/syskrnl.asm`](../../NedoOS/src/kernel/syskrnl.asm)
 (app descriptor, scheduler, context switch), [`kernel/idle.asm`](../../NedoOS/src/kernel/idle.asm)
 (idle task), `cmd.asm` (process creation from the shell), and the `WAITPID`
 protocol in [`_sdk/sys_h.asm`](../../NedoOS/src/_sdk/sys_h.asm).
@@ -52,6 +52,12 @@ stateDiagram-v2
   reschedules.
 * **Detachment.** `OS_HIDEFROMPARENT` removes the parent link so the shell does
   not block on a GUI program (`term`, `nv`, games use this).
+* **Birth internals.** The BDOS-side spawn path `sys_newapp_forBDOS`
+  ([`kernel/bdospg2.asm`](../../NedoOS/src/kernel/bdospg2.asm)) allocates the
+task id and descriptor with interrupts disabled (the source marks this span
+a critical section), then copies the parent's `stdin`/`stdout`/`stderr`
+handles and text-window address into the child — this is where pipe
+redirection is inherited.
 
 ## The scheduler
 

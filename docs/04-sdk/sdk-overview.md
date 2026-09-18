@@ -2,6 +2,12 @@
 
 *Up: [Documentation hub](../README.md) · Next: [API catalog](api-catalog.md)*
 
+Sources: [`_sdk/`](../../NedoOS/src/_sdk) itself — `sysdefs.asm`,
+`sys_h.asm`, `stdio.asm`, `string.asm`, `file.asm`, the contracts in
+[`api_base.txt`](../../NedoOS/src/_sdk/api_base.txt) /
+[`api_net.txt`](../../NedoOS/src/_sdk/api_net.txt), and the library
+subdirectories.
+
 The SDK is everything a NedoOS program includes from
 [`NedoOS/src/_sdk`](../../NedoOS/src/_sdk). It is header-only by design:
 assembly-time macros, structures and constants — plus a handful of optional

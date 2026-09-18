@@ -2,6 +2,12 @@
 
 *Prev: [Goals & requirements](goals-and-requirements.md) · Next: [Glossary](glossary.md)*
 
+Sources: the `syssets-*` configuration blocks in
+[`src/Makefile`](../../NedoOS/src/Makefile) (the switches land in the
+generated `_sdk/syssets.asm` — not present in a clean checkout), driver
+sources under [`src/kernel/`](../../NedoOS/src/kernel), and the emulator
+configuration [`us/emul.ini`](../../NedoOS/us/emul.ini).
+
 NedoOS is compiled per platform. The compile-time switches live in the generated
 file `_sdk/syssets.asm` (see the `syssets-*` targets in
 [`NedoOS/src/Makefile`](../../NedoOS/src/Makefile)); platform identity also
@@ -124,7 +130,7 @@ For development without iron, the project ships UnrealSpeccy presets
 are mounted as VHD/IMA files — full instructions in
 [release images](../06-tools-and-build/release-images.md).
 
-## Next
+## See also
 
 * [Glossary](glossary.md) — terminology used across these docs.
 * [System architecture](../02-architecture/system-architecture.md) — how the

@@ -19,7 +19,7 @@ timeline
          : 13.11 — per-task directory enumeration (two shells, two dirs)
          : 15.11 — per-task drive/cwd; idle task; Nedovigator born
     2019 : Version numbers appear (v0.162, March) tied to SVN revisions
-    2021 : v0.1077–v0.1179 — kapps ecosystem matures (zifi, nc, …)
+    2021 : v0.1077-v0.1179 — kapps ecosystem matures (zifi, nc, ...)
     2022 : v0.1403, v0.1534 — network stack hardening, ESP8266 backend
     2024 : v0.2188 (23.10) — latest entry in this snapshot (r2685)
 ```

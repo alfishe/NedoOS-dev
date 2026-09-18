@@ -89,9 +89,17 @@ Implements `disk_status/disk_initialize/disk_read/disk_write` for:
 2. **Z-controller SD** — bit-banged SPI on shadow ports;
 3. **NeoGS SD** — commands through the GS coprocessor port protocol
    (`portsngs.asm`, `ngssddrv.asm`, firmware `ngssd.bin` installed by
-   `ngsinst.asm`);
-4. **SL811 USB** — bulk-only mass storage via `sl811.asm`; the SL811 detect
-   code is shared with the network stack (`device_states`, port `0xAB` probing).
+   `ngsinst.asm` at `0x5B00`). Per the `ngssddrv.asm` header, a transfer
+   hands the driver `HL` = load address, `BCDE` = 32-bit sector number and
+   `A` = count of 512-byte blocks (multi-block only), and cycles through
+   the fixed communication entry at `0x026E`;
+4. **SL811 USB** — bulk-only mass storage via `sl811.asm` (~44 KB, the
+   kernel's largest driver): device enumeration (`EnumMassDev`) and bulk
+   endpoints (`.epBulkSend`/`.epBulkRcv`) are driven by poking the SL811HS
+   registers (`EP0Control/Status/Counter`, `CtrlReg`, `IntEna`,
+   `IntStatus`, `SOFcnt`), polling `IntStatus` for completion and clearing
+   it with `0xFF`. The SL811 detect code is shared with the network stack
+   (`device_states`, port `0xAB` probing).
 
 ### What the FAT layer provides through BDOS
 

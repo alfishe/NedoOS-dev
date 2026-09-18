@@ -2,7 +2,7 @@
 
 *Prev: [API catalog](api-catalog.md) · Up: [Documentation hub](../README.md)*
 
-Source of truth: the *"The system is currently unable to assemble itself"*
+Sources: the *"The system is currently unable to assemble itself"*
 essay in [`nedoos_en.md`](../../NedoOS/src/nedoos_en.md), the macro
 contracts in [`sys_h.asm`](../../NedoOS/src/_sdk/sys_h.asm), and the
 house style visible across `src/`.

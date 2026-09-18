@@ -2,6 +2,12 @@
 
 *Prev: [Overview](overview.md) · Next: [Hardware platforms](hardware-platforms.md)*
 
+Sources: [`nedoos.txt`](../../NedoOS/src/nedoos.txt) (official feature
+list), [`_sdk/api_base.txt`](../../NedoOS/src/_sdk/api_base.txt) and
+[`_sdk/api_net.txt`](../../NedoOS/src/_sdk/api_net.txt) (API contracts),
+[`nedoos_en.md`](../../NedoOS/src/nedoos_en.md),
+[`src/Makefile`](../../NedoOS/src/Makefile).
+
 This page reconstructs *what NedoOS is required to do* (functional requirements),
 *how well* (non-functional requirements) and *what it must live within*
 (constraints). Requirements are synthesized from the official feature list in
@@ -162,3 +168,10 @@ Every FR above links to the detailed pages:
 * FR-6 → [interrupt & timing](../02-architecture/interrupt-and-timing.md)
 * FR-7 → [network stack](../03-kernel/network-stack.md)
 * API surface → [API catalog](../04-sdk/api-catalog.md)
+
+## See also
+
+* [Hardware platforms](hardware-platforms.md) — the machines these
+  requirements target.
+* [System architecture](../02-architecture/system-architecture.md) — how
+  the requirements are met in practice.

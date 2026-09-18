@@ -2,6 +2,11 @@
 
 *Parent: [Documentation hub](../README.md) · Next: [Goals & requirements](goals-and-requirements.md)*
 
+Sources: [`nedoos.txt`](../../NedoOS/src/nedoos.txt) and
+[`nedoos_en.md`](../../NedoOS/src/nedoos_en.md) (official descriptions),
+[`src/Makefile`](../../NedoOS/src/Makefile) (what gets built), the kernel
+tree [`src/kernel/`](../../NedoOS/src/kernel).
+
 ## What NedoOS is
 
 **NedoOS** is a cooperative-multitasking operating system for Z80-based ZX Spectrum
@@ -106,7 +111,7 @@ flowchart TB
 
 A detailed file-by-file map is in [07-appendix/source-map.md](../07-appendix/source-map.md).
 
-## Where to go next
+## See also
 
 * [Goals, functional requirements & constraints](goals-and-requirements.md)
 * [Hardware platforms](hardware-platforms.md)
