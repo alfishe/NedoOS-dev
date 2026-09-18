@@ -10,58 +10,6 @@ code, build scripts, and original project notes (`nedoos.txt`, `nedoos_en.md`,
 > The sources are largely commented in Russian (CP866/CP1251 encodings).
 > This documentation set renders the essential content in English.
 
-## Documentation map
-
-```mermaid
-flowchart LR
-    subgraph Intro["01 Introduction"]
-        A1[overview]
-        A2[goals & requirements]
-        A3[hardware platforms]
-        A4[glossary]
-    end
-    subgraph Arch["02 Architecture"]
-        B1[system architecture]
-        B2[memory map]
-        B3[process model]
-        B4[I/O & pipes]
-        B5[interrupts & timing]
-    end
-    subgraph Kern["03 Kernel internals"]
-        C1[kernel structure & boot]
-        C2[syscall interface]
-        C3[filesystem stack]
-        C4[network stack]
-    end
-    subgraph SDK["04 SDK & API"]
-        D1[SDK overview]
-        D2[API catalog]
-        D3[coding guidelines]
-    end
-    subgraph Apps["05 Applications"]
-        E1[overview & catalog]
-        E2[shell & terminals]
-        E3[file management]
-        E4[editors & viewers]
-        E5[development tools]
-        E6[multimedia]
-        E7[network apps]
-        E8[archivers & utils]
-        E9[games]
-    end
-    subgraph Tools["06 Tools & build"]
-        F1[build system]
-        F2[host tools]
-        F3[release images]
-    end
-    subgraph Appx["07 Appendix"]
-        G1[history & credits]
-        G2[source map]
-    end
-    Intro --> Arch --> Kern --> SDK --> Apps --> Tools
-    Kern -.-> Appx
-```
-
 ## Reading paths
 
 | If you want to… | Read |
@@ -129,6 +77,9 @@ flowchart LR
 
 ## Conventions
 
+* **Contributing / editing rules:** see [AGENTS.md](AGENTS.md) — the strict
+  reverse-engineering, style, consistency and pre-commit checklist for this
+  documentation set.
 * Hexadecimal values are written `0x1234` (sjasmplus style, as in the sources);
   the original Russian docs use `#1234` — both mean the same.
 * Z80 register pairs are written `DE`, `HL`, `IX` etc. All integers are
