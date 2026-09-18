@@ -1,0 +1,88 @@
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+
+# Editor/IDE
+*.swp
+*.swo
+*~
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+.project
+.settings/
+.classpath
+*.code-workspace
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+.venv/
+env/
+.env
+*.egg-info/
+dist/
+build/
+.eggs/
+*.egg
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+
+# IDA Pro
+*.id0
+*.id1
+*.id2
+*.nam
+*.til
+*.idb
+*.i64
+
+# Ghidra
+*.gpr
+*.rep/
+*.lock
+*.lock~
+
+# Binary Ninja
+*.bndb
+
+# Radare2
+*.r2
+
+# Debug/build artifacts
+*.o
+*.obj
+*.exe
+*.dll
+*.dylib
+*.bin
+*.rom
+*.tap
+*.tzx
+*.trd
+*.scl
+*.sna
+*.z80
+
+# Logs
+*.log
+logs/
+
+# Temp files
+tmp/
+temp/
+*.tmp
+*.bak
+*.orig

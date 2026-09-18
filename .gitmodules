@@ -1,0 +1,3 @@
+[submodule "NedoOS"]
+	path = NedoOS
+	url = https://github.com/alfishe/NedoOS.git
